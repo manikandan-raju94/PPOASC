@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-03-05T00:08:38.107045+05:30 by Eclipse SUMO sumo 1.26.0
+-->
+
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="Network/network_signalized.net.xml"/>
+         <route-files value="Demand/heavy_traffic.rou.xml"/>
+    </input>
+     <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <time-to-teleport value="-1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <ignore-junction-blocker value="60"/>
+    </processing>
+
+</sumoConfiguration>
