@@ -8,33 +8,22 @@ This repository provides two implementations of the proposed framework:
 •	PASC-Comm: PPO-based adaptive signal control with inter-agent communication, where neighboring intersections exchange traffic information to improve coordination and overall network performance.
 The objective is to reduce traffic congestion, minimize vehicle waiting time, improve throughput, and enhance urban traffic efficiency under light, medium, and heavy traffic conditions.
 
-**Repository Structure**
-PPOASC/
-│
-├── pasc_wcomm.py                 	# PPO Adaptive Signal Control (Without Communication)
-├── pasc_comm.py                  	# PPO Adaptive Signal Control (With Communication)
-├── traffic_env_wcomm.py          # Environment for PASC-WComm
-├── traffic_env_comm.py             # Environment for PASC-Comm
-├── logger.py                     	# Logging utilities
-├── requirements.txt              	# Required Python packages
-├── runsimulation.sumocfg           # SUMO configuration file
-├── README.md
-│
-├── Network/
-│   └── network_signalized.net.xml
-│
-├── Demand/
-│   ├── traffic_generator_dynamic.py
-│   ├── light_traffic.rou.xml
-│   ├── medium_traffic.rou.xml
-│   ├── heavy_traffic.rou.xml
-│   └── additional route files
-│
-├── models/
-├── checkpoints/
-├── logs/
-└── tb_logs/
+## Repository Structure
 
+- `pasc_wcomm.py` – PPO Adaptive Signal Control (Without Communication)
+- `pasc_comm.py` – PPO Adaptive Signal Control (With Communication)
+- `traffic_env_wcomm.py` – Environment for PASC-WComm
+- `traffic_env_comm.py` – Environment for PASC-Comm
+- `logger.py` – Logging utilities
+- `runsimulation.sumocfg` – SUMO configuration file
+- `Network/` – SUMO network files
+- `Demand/` – Traffic demand and route files
+- `models/` – Trained models
+- `checkpoints/` – PPO checkpoints
+- `logs/` – Training logs
+- `tb_logs/` – TensorBoard logs
+
+  
 **Features**
 •	PPO-based adaptive traffic signal control
 •	Multi-intersection traffic management
